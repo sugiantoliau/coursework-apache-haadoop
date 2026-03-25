@@ -2,7 +2,7 @@
 
 
 Download hadoop-3.2.3.tar.gz to your theia environment by running the following command.
-```
+'''
 curl https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz --output hadoop-3.3.6.tar.gz
 '''
 
