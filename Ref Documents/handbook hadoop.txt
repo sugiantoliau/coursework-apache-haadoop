@@ -1,0 +1,150 @@
+Cheat Sheet Introduction to the Hadoop Ecosystem
+
+https://author-ide.skills.network/render?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZF9pbnN0cnVjdGlvbnNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuczMudXMuY2xvdWQtb2JqZWN0LXN0b3JhZ2UuYXBwZG9tYWluLmNsb3VkL0lCTS1CRDAyMjVFTi1Ta2lsbHNOZXR3b3JrL2xhYnMvTW9kdWxlMi9DaGVhdF9TaGVldC9JbnRyb2R1Y3Rpb25fdG9fdGhlX0hhZG9vcF9FY29zeXN0ZW0ubWQ_dD0xNzQ2MTIyOTIyIiwidG9vbF90eXBlIjoiaW5zdHJ1Y3Rpb25hbC1sYWIiLCJhdGxhc19maWxlX2lkIjozNDM0NywiYWRtaW4iOmZhbHNlLCJpYXQiOjE3NTc2OTQ1NTJ9.1o7fYjXhQRewZUCi56WiqAP7ZlZhGTdu493rze9n3R0
+
+--------------------------
+
+### Set up Single-Node Hadoop
+-------------
+
+
+Download hadoop-3.2.3.tar.gz to your theia environment by running the following command.
+
+curl https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz --output hadoop-3.3.6.tar.gz
+
+
+-------------
+Extract the tar file in the currently directory.
+
+tar -xvf hadoop-3.3.6.tar.gz
+
+-------------
+Navigate to the hadoop-3.3.6 directory.
+
+cd hadoop-3.3.6
+
+-------------
+
+Check the hadoop command to see if it is setup. This will display the usage documentation for the hadoop script.
+
+bin/hadoop
+
+-------------
+Run the following command to download data.txt to your current directory.
+
+curl https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-BD0225EN-SkillsNetwork/labs/data/data.txt --output data.txt
+
+-------------
+Run the Map reduce application for wordcount on data.txt and store the output in /user/root/output
+
+bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output
+
+-------------
+Once the word count runs successfully, you can run the following command to see the output file it has generated.
+
+You should see part-r-00000 with _SUCCESS indicating that the wordcount has been done.
+
+ls output
+
+-------------
+Run the following command to see the word count output.
+
+cat  output/part-r-00000
+
+-------------
+
+### Practice Lab
+
+Do a word count on a file with the following content.
+
+Italy Venice
+Italy Pizza
+Pizza Pasta Gelato
+
+
+-------------
+
+rm data.txt
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
+-------------
+
+
